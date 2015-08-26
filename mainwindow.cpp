@@ -74,6 +74,10 @@ void MainWindow::on_startwork_clicked()
     ui->startwork->setDisabled(true);
     ui->startrest->setDisabled(true);
     ui->stoptimer->setDisabled(false);
+    ui->pushButton->setDisabled(true);
+    ui->pushButton_2->setDisabled(true);
+    ui->pushButton_4->setDisabled(true);
+    ui->pushButton_5->setDisabled(true);
 }
 
 void MainWindow::tick()
@@ -99,6 +103,10 @@ void MainWindow::on_stoptimer_clicked()
     ui->startwork->setDisabled(false);
     ui->startrest->setDisabled(false);
     ui->stoptimer->setDisabled(true);
+    ui->pushButton->setDisabled(false);
+    ui->pushButton_2->setDisabled(false);
+    ui->pushButton_4->setDisabled(false);
+    ui->pushButton_5->setDisabled(false);
 }
 
 void MainWindow::on_startrest_clicked()
@@ -113,4 +121,9 @@ void MainWindow::on_startrest_clicked()
     ui->startwork->setDisabled(true);
     ui->startrest->setDisabled(true);
     ui->stoptimer->setDisabled(false);
+    ui->pushButton->setDisabled(true);
+    ui->pushButton_2->setDisabled(true);
+    ui->pushButton_4->setDisabled(true);
+    ui->pushButton_5->setDisabled(true);
+
 }
