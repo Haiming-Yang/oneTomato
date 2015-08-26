@@ -396,49 +396,54 @@
    <widget class="QPushButton" name="stoptimer">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>270</y>
+      <x>205</x>
+      <y>280</y>
       <width>71</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">border-image: url(:/new/prefix1/buttonImage/stoptimer.jpg);
+color: rgb(210, 210, 210);
+</string>
     </property>
     <property name="text">
-     <string/>
+     <string>停止计时</string>
     </property>
    </widget>
    <widget class="QPushButton" name="startrest">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>270</y>
+      <x>111</x>
+      <y>280</y>
       <width>71</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">border-image: url(:/new/prefix1/buttonImage/startrest.jpg);
+color: rgb(221, 221, 221);
+</string>
     </property>
     <property name="text">
-     <string/>
+     <string>开始休息</string>
     </property>
    </widget>
    <widget class="QPushButton" name="startwork">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>270</y>
+      <x>15</x>
+      <y>280</y>
       <width>70</width>
       <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">border-image: url(:/new/prefix1/buttonImage/startwork.jpg);
+color: rgb(210,210,210);</string>
     </property>
     <property name="text">
-     <string/>
+     <string>开始工作</string>
     </property>
    </widget>
    <zorder>pushButton_4</zorder>
