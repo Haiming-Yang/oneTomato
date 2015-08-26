@@ -10,6 +10,8 @@
 #include <QAction>
 #include <QMenu>
 #include <QTimer>
+#include <QSound>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -58,4 +60,57 @@ void MainWindow::on_pushButton_5_clicked()
    currentTask*newui = new currentTask();
    this->hide();
    newui ->show();
+}
+
+void MainWindow::on_startwork_clicked()
+{
+    TomatoConfig *config = TomatoConfig::instance();
+    count = config->mWorkLength;
+    timer->start();
+    tick();
+
+    QSound::play(tr(":/sounds/crank.wav"));
+
+    ui->startwork->setDisabled(true);
+    ui->startrest->setDisabled(true);
+    ui->stoptimer->setDisabled(false);
+}
+
+void MainWindow::tick()
+{
+    if(count <= 0) {
+        on_stoptimer_clicked();
+        QSound::play(tr(":/sounds/deskbell.wav"));
+        show();
+    } else {
+        QString str;
+        str.sprintf("%02d:%02d",count / 60, count % 60);
+        ui->timelabel->setText(str);
+
+        QSound::play(tr(":/sounds/tictac.wav"));
+    }
+    count--;
+}
+
+void MainWindow::on_stoptimer_clicked()
+{
+    timer->stop();
+    ui->timelabel->setText(tr("00:00"));
+    ui->startwork->setDisabled(false);
+    ui->startrest->setDisabled(false);
+    ui->stoptimer->setDisabled(true);
+}
+
+void MainWindow::on_startrest_clicked()
+{
+    TomatoConfig *config = TomatoConfig::instance();
+    count = config->mRestLength;
+    timer->start();
+    tick();
+
+    QSound::play(tr(":/sounds/crank.wav"));
+
+    ui->startwork->setDisabled(true);
+    ui->startrest->setDisabled(true);
+    ui->stoptimer->setDisabled(false);
 }

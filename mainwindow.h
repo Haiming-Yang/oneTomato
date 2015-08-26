@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QWidget>
+#include <QTimer>
+#include <QCloseEvent>
+#include <QSystemTrayIcon>
 #include "set.h"
 namespace Ui {
 class MainWindow;
@@ -24,6 +28,14 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+
+    void on_startwork_clicked();
+
+    void on_stoptimer_clicked();
+
+    void on_startrest_clicked();
+
+    void tick();
 
 private:
     Ui::MainWindow *ui;

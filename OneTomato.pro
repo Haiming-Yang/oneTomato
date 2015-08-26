@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -40,4 +41,5 @@ DISTFILES +=
 
 RESOURCES += \
     button.qrc \
-    bgi.qrc
+    bgi.qrc \
+    sound.qrc
