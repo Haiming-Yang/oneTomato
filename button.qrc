@@ -11,4 +11,7 @@
         <file>buttonImage/startwork.jpg</file>
         <file>buttonImage/stoptimer.jpg</file>
     </qresource>
+    <qresource prefix="/">
+        <file>buttonImage/cleanall.jpg</file>
+    </qresource>
 </RCC>

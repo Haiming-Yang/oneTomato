@@ -4,4 +4,7 @@
         <file>backgroundImage/fanqie.jpg</file>
         <file>backgroundImage/keng.png</file>
     </qresource>
+    <qresource prefix="/">
+        <file>backgroundImage/redkeng.jpg</file>
+    </qresource>
 </RCC>

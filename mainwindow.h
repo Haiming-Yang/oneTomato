@@ -19,6 +19,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+
 private slots:
     void on_pushButton_clicked();
 
@@ -28,7 +29,6 @@ private slots:
 
     void on_pushButton_5_clicked();
 
-
     void on_startwork_clicked();
 
     void on_stoptimer_clicked();
@@ -37,11 +37,14 @@ private slots:
 
     void tick();
 
+    void red_show();
+
 private:
     Ui::MainWindow *ui;
     QTimer *timer;
     int count;
     set * configDlg;
+    int red;
 };
 
 #endif // MAINWINDOW_H
