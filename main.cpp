@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include <QApplication>
+//#include "numoftomato.h"
 
 int main(int argc, char *argv[])
 {
@@ -7,5 +8,6 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
+    //number = 0;
     return a.exec();
 }

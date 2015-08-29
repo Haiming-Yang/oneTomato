@@ -33,7 +33,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->stoptimer->setDisabled(true);
     configDlg = new set();
 
-    red_show();
+    red_show(numOfTomato::num);
   //  connect(timer,SIGNAL(timeout()),this,SLOT(red_show()));
 
 
@@ -96,11 +96,11 @@ void MainWindow::on_startwork_clicked()
 void MainWindow::tick()
 {
     if(count1 <= 0) {
-        number +=1;
+        numOfTomato::num +=1;
         on_stoptimer_clicked();
         QSound::play(tr(":/sounds/deskbell.wav"));
 
-        red_show();
+        red_show(numOfTomato::num);
         show();
        // timer->stop();
     } else {
@@ -167,7 +167,7 @@ void MainWindow::on_startrest_clicked()
     ui->pushButton_5->setDisabled(true);
 }
 
-void MainWindow::red_show()
+void MainWindow::red_show(int)
 {
     /*TomatoConfig *config = TomatoConfig::instance();
     red+=1;
@@ -175,8 +175,8 @@ void MainWindow::red_show()
    // while (restOrNot == false) {
 
 
-    if(number<=9){
-    switch(number)
+    if(numOfTomato::num<=9){
+    switch(numOfTomato::num)
     {
     case 0:ui->red_label_1->hide();
         ui->red_label_2->hide();
@@ -272,7 +272,7 @@ void MainWindow::red_show()
     }
     }
     else {
-        switch(number%9)
+        switch(numOfTomato::num%9)
         {
         case 1:ui->red_label_1->show();
             ui->red_label_2->hide();
