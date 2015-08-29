@@ -21,7 +21,14 @@ SOURCES += main.cpp\
     currenttask.cpp \
     newtask.cpp \
     TomatoConfig.cpp \
-    numoftomato.cpp
+    numoftomato.cpp \
+    info.cpp \
+    copper.cpp \
+    sliver.cpp \
+    gold.cpp \
+    pt.cpp \
+    diamond.cpp \
+    king.cpp
 
 HEADERS  += mainwindow.h \
     historicaltask.h \
@@ -30,18 +37,33 @@ HEADERS  += mainwindow.h \
     currenttask.h \
     newtask.h \
     TomatoConfig.h \
-    numoftomato.h
+    numoftomato.h \
+    info.h \
+    copper.h \
+    sliver.h \
+    gold.h \
+    pt.h \
+    diamond.h \
+    king.h
 
 FORMS    += mainwindow.ui \
     historicaltask.ui \
     set.ui \
     achivement.ui \
     currenttask.ui \
-    newtask.ui
+    newtask.ui \
+    info.ui \
+    copper.ui \
+    sliver.ui \
+    gold.ui \
+    pt.ui \
+    diamond.ui \
+    king.ui
 
 DISTFILES +=
 
 RESOURCES += \
     button.qrc \
     bgi.qrc \
-    sound.qrc
+    sound.qrc \
+    honourimage.qrc

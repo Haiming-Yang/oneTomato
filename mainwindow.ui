@@ -88,7 +88,7 @@
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>10</x>
       <y>420</y>
       <width>35</width>
       <height>35</height>
@@ -591,6 +591,22 @@ color: rgb(234, 234, 234);</string>
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="info">
+    <property name="geometry">
+     <rect>
+      <x>246</x>
+      <y>420</y>
+      <width>41</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/buttonImage/info.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>pushButton_4</zorder>
    <zorder>label_3</zorder>
    <zorder>label_4</zorder>
@@ -617,6 +633,7 @@ color: rgb(234, 234, 234);</string>
    <zorder>red_label_8</zorder>
    <zorder>red_label_7</zorder>
    <zorder>red_label_6</zorder>
+   <zorder>info</zorder>
   </widget>
   <action name="actionAbout">
    <property name="text">

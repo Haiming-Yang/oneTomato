@@ -13,5 +13,6 @@
     </qresource>
     <qresource prefix="/">
         <file>buttonImage/cleanall.jpg</file>
+        <file>buttonImage/info.jpg</file>
     </qresource>
 </RCC>

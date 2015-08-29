@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>honourImage/copper_bw.jpg</file>
+        <file>honourImage/copper_co.jpg</file>
+        <file>honourImage/diamond_bw.jpg</file>
+        <file>honourImage/diamond_co.jpg</file>
+        <file>honourImage/gold_bw.jpg</file>
+        <file>honourImage/gold_co.jpg</file>
+        <file>honourImage/king_bw.jpg</file>
+        <file>honourImage/king_co.jpg</file>
+        <file>honourImage/pt_bw.jpg</file>
+        <file>honourImage/pt_co.jpg</file>
+        <file>honourImage/sliver_bw.jpg</file>
+        <file>honourImage/sliver_co.jpg</file>
+    </qresource>
+</RCC>

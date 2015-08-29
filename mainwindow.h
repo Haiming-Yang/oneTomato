@@ -41,6 +41,8 @@ private slots:
 
 
     void tick_rest();
+    void on_info_clicked();
+
 public slots:
    void red_show(int);
 

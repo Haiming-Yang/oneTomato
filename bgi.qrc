@@ -6,5 +6,8 @@
     </qresource>
     <qresource prefix="/">
         <file>backgroundImage/redkeng.jpg</file>
+        <file>backgroundImage/gnu.png</file>
+        <file>backgroundImage/github.png</file>
+        <file>backgroundImage/yhm.jpg</file>
     </qresource>
 </RCC>

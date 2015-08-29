@@ -12,6 +12,7 @@
 #include <QTimer>
 #include <QSound>
 #include"numoftomato.h"
+#include "info.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -370,3 +371,10 @@ void MainWindow::red_show(int)
     }
 }
 //}
+
+void MainWindow::on_info_clicked()
+{
+    info * infoui = new info();
+    this->hide();
+    infoui->show();
+}
