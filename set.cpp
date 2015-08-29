@@ -3,6 +3,7 @@
 #include"mainwindow.h"
 #include "TomatoConfig.h"
 #include "numoftomato.h"
+#include "totaltask.h"
 set::set(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::set)
@@ -28,6 +29,7 @@ void set::on_pushButton_clicked()
     //config->mWorkLength = ui->worksb->value() * 2;
     //config->mRestLength = ui->restsb->value() * 2;
 
+    totalTask::taskTime = config->mWorkLength;
 
     config->save();
     MainWindow *main =new MainWindow();

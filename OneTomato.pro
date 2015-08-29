@@ -6,7 +6,7 @@
 
 QT       += core gui
 QT       += multimedia
-
+QT       += sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = OneTomato
@@ -28,7 +28,8 @@ SOURCES += main.cpp\
     gold.cpp \
     pt.cpp \
     diamond.cpp \
-    king.cpp
+    king.cpp \
+    totaltask.cpp
 
 HEADERS  += mainwindow.h \
     historicaltask.h \
@@ -44,7 +45,8 @@ HEADERS  += mainwindow.h \
     gold.h \
     pt.h \
     diamond.h \
-    king.h
+    king.h \
+    totaltask.h
 
 FORMS    += mainwindow.ui \
     historicaltask.ui \

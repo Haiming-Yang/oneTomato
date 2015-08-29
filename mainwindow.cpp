@@ -13,6 +13,7 @@
 #include <QSound>
 #include"numoftomato.h"
 #include "info.h"
+#include "totaltask.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -96,6 +97,13 @@ void MainWindow::on_startwork_clicked()
 
 void MainWindow::tick()
 {
+    if(count1 <= 0) {
+        totalTask::totalTotalTomato += 1;
+    }//番茄总数
+
+    if(count1 <= 0) {
+        totalTask::totalTomato += 1;
+    }
     if(count1 <= 0) {
         numOfTomato::num +=1;
         on_stoptimer_clicked();
