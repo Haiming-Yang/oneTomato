@@ -19,6 +19,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+  int red;
 
 private slots:
     void on_pushButton_clicked();
@@ -38,13 +39,18 @@ private slots:
     void tick();
 
     void red_show();
+    void tick_rest();
 
 private:
     Ui::MainWindow *ui;
     QTimer *timer;
-    int count;
+    QTimer *timer2;
+    int count1;
+    int count2;
     set * configDlg;
-    int red;
+    bool restOrNot;
+
+
 };
 
 #endif // MAINWINDOW_H

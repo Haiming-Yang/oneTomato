@@ -2,6 +2,7 @@
 #include "ui_set.h"
 #include"mainwindow.h"
 #include "TomatoConfig.h"
+//#include "numoftomato.h"
 set::set(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::set)
@@ -23,8 +24,21 @@ void set::on_pushButton_clicked()
     TomatoConfig *config = TomatoConfig::instance();
     config->mWorkLength = ui->worksb->value() * 60;
     config->mRestLength = ui->restsb->value() * 60;
+
+    //config->mWorkLength = ui->worksb->value() * 2;
+    //config->mRestLength = ui->restsb->value() * 2;
+
+
     config->save();
     MainWindow *main =new MainWindow();
     this ->hide();
     main->show();
+}
+
+void set::on_pushButton_2_clicked()
+{
+    MainWindow *reset = new MainWindow;
+    //number = 0;
+    this ->hide();
+    reset->show();
 }

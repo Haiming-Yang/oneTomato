@@ -28,7 +28,8 @@ HEADERS  += mainwindow.h \
     achivement.h \
     currenttask.h \
     newtask.h \
-    TomatoConfig.h
+    TomatoConfig.h \
+    numoftomato.h
 
 FORMS    += mainwindow.ui \
     historicaltask.ui \
