@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     achivement.cpp \
     currenttask.cpp \
     newtask.cpp \
-    TomatoConfig.cpp
+    TomatoConfig.cpp \
+    numoftomato.cpp
 
 HEADERS  += mainwindow.h \
     historicaltask.h \

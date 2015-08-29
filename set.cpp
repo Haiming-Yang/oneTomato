@@ -2,7 +2,7 @@
 #include "ui_set.h"
 #include"mainwindow.h"
 #include "TomatoConfig.h"
-//#include "numoftomato.h"
+#include "numoftomato.h"
 set::set(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::set)
@@ -39,6 +39,8 @@ void set::on_pushButton_2_clicked()
 {
     MainWindow *reset = new MainWindow;
     //number = 0;
+    numOfTomato::num = 0;
     this ->hide();
     reset->show();
+    reset->red_show(0);
 }
