@@ -152,6 +152,7 @@ void MainWindow::on_stoptimer_clicked()
     ui->pushButton->show();
     ui->pushButton_2->show();
     ui->pushButton_4->show();
+    ui->info->show();
     ui->pushButton_5->setDisabled(false);
 }
 

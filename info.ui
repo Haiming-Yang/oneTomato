@@ -105,7 +105,7 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="onetomato">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -118,7 +118,7 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#6d6d6d;&quot;&gt;oneTomato&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="Fdtr">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -131,12 +131,12 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#a7a7a7;&quot;&gt;From dream to reality.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="version">
    <property name="geometry">
     <rect>
      <x>133</x>
      <y>230</y>
-     <width>59</width>
+     <width>31</width>
      <height>16</height>
     </rect>
    </property>
@@ -144,49 +144,7 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
     <string>V1.1</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>400</y>
-     <width>30</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/backgroundImage/gnu.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>410</y>
-     <width>59</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#9a9a9a;&quot;&gt;开源协议&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>410</y>
-     <width>59</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#b2b2b2;&quot;&gt;开发者&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
+  <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -202,48 +160,94 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_9">
+  <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>30</x>
      <y>410</y>
-     <width>59</width>
-     <height>16</height>
+     <width>31</width>
+     <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(178, 178, 178);
+font: 10pt &quot;.Helvetica Neue DeskInterface&quot;;
+border-image: url(:/new/prefix1/buttonImage/whihtebt.jpg);</string>
+   </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#a3a3a3;&quot;&gt;项目托管&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>开发者</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_10">
+  <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>130</x>
+     <y>410</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(178, 178, 178);
+font: 10pt &quot;.Helvetica Neue DeskInterface&quot;;
+border-image: url(:/new/prefix1/buttonImage/whihtebt.jpg);</string>
+   </property>
+   <property name="text">
+    <string>项目托管</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
      <y>400</y>
      <width>30</width>
      <height>30</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/backgroundImage/github.png);</string>
+    <string notr="true">border-image: url(:/backgroundImage/yhm.jpg);
+border-image: url(:/backgroundImage/github.png);</string>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
-  <zorder>verticalWidget</zorder>
-  <zorder>label</zorder>
-  <zorder>pushButton</zorder>
-  <zorder>logo</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_3</zorder>
-  <zorder>label_4</zorder>
-  <zorder>label_5</zorder>
-  <zorder>label_6</zorder>
-  <zorder>label_8</zorder>
-  <zorder>label_7</zorder>
-  <zorder>label_9</zorder>
-  <zorder>label_10</zorder>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>410</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(178, 178, 178);
+font: 10pt &quot;.Helvetica Neue DeskInterface&quot;;
+border-image: url(:/new/prefix1/buttonImage/whihtebt.jpg);</string>
+   </property>
+   <property name="text">
+    <string>开原协议</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>400</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/backgroundImage/yhm.jpg);
+border-image: url(:/backgroundImage/gnu.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

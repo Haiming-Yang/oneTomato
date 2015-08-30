@@ -101,24 +101,6 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
     <string>完成</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>60</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/new/prefix1/buttonImage/btred.png);
-color: rgb(255, 255, 255);
-font: 13pt &quot;Microsoft YaHei&quot;;</string>
-   </property>
-   <property name="text">
-    <string>管理</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>

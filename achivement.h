@@ -44,6 +44,7 @@ private slots:
 
 private:
     Ui::achivement *ui;
+    void honourshow();
 };
 
 #endif // ACHIVEMENT_H

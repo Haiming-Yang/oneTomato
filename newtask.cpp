@@ -14,15 +14,13 @@ newTask::~newTask()
     delete ui;
 }
 
-void newTask::on_pushButton_clicked()
-{
-    currentTask *ui = new currentTask();
-    this->hide();
-    ui->show();
-}
 
 void newTask::on_pushButton_2_clicked()
 {
     totalTask::str_taskName = ui->lineEdit->text();
     totalTask::str_taskTag = ui->lineEdit_2->text();
+    totalTask::key = 1;
+    currentTask *ui = new currentTask();
+    this->hide();
+    ui->show();
 }

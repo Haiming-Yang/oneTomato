@@ -7,6 +7,7 @@ class totalTask
 public:
     static int taskTime;
     static int totalTomato;
+    static int key;
     static int totalTotalTomato;
     static QString str_taskName;
     static QString str_taskTag;

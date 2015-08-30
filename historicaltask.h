@@ -1,6 +1,7 @@
 #ifndef HISTORICALTASK_H
 #define HISTORICALTASK_H
 #include <QSqlTableModel>
+#include <QSqlQuery>
 #include <QDialog>
 
 namespace Ui {
@@ -14,6 +15,9 @@ class historicalTask : public QDialog
 public:
     explicit historicalTask(QWidget *parent = 0);
     ~historicalTask();
+
+/*public:
+    QSqlQuery query;*/
 
 private slots:
     void on_pushButton_clicked();

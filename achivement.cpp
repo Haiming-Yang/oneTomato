@@ -7,11 +7,27 @@
 #include "pt.h"
 #include "diamond.h"
 #include "king.h"
+#include "totaltask.h"
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include "historicaltask.h"
+
 achivement::achivement(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::achivement)
 {
     ui->setupUi(this);
+
+    QSqlDatabase db = QSqlDatabase::database();
+    QSqlQuery query;
+    query.exec("select * from task3");
+    while(query.next()) {
+        totalTask::totalTotalTomato += totalTask::totalTomato;
+        //totalTask::totalTotalTomato = 5000;
+    }
+
+    honourshow();
+
 }
 
 achivement::~achivement()
@@ -108,4 +124,41 @@ void achivement::on_king_co_clicked()
     king *kin = new king();
     this -> hide();
     kin -> show();
+}
+void achivement::honourshow() {
+    if(totalTask::totalTotalTomato >= 1 && totalTask::totalTotalTomato<10){
+        ui->copper_bw->hide();
+
+    }
+    else if(totalTask::totalTotalTomato >= 10 && totalTask::totalTotalTomato<100){
+        ui->copper_bw->hide();
+        ui->sliver_bw->hide();
+    }
+    else if(totalTask::totalTotalTomato >= 100 && totalTask::totalTotalTomato<500){
+        ui->copper_bw->hide();
+        ui->sliver_bw->hide();
+        ui->gold_bw->hide();
+    }
+    else if(totalTask::totalTotalTomato >= 500 && totalTask::totalTotalTomato<1000){
+        ui->copper_bw->hide();
+        ui->sliver_bw->hide();
+        ui->gold_bw->hide();
+        ui->pt_bw->hide();
+    }
+    else if(totalTask::totalTotalTomato >= 1000 && totalTask::totalTotalTomato<5000){
+        ui->copper_bw->hide();
+        ui->sliver_bw->hide();
+        ui->gold_bw->hide();
+        ui->pt_bw->hide();
+        ui->diamond_bw->hide();
+    }
+    else if(totalTask::totalTotalTomato >= 5000 ){
+        ui->copper_bw->hide();
+        ui->sliver_bw->hide();
+        ui->gold_bw->hide();
+        ui->pt_bw->hide();
+        ui->diamond_bw->hide();
+        ui->king_bw->hide();
+    }
+
 }

@@ -20,7 +20,7 @@ historicalTask::historicalTask(QWidget *parent) :
 
     QSqlDatabase db = QSqlDatabase::database();
     QSqlQuery query;
-    if(key == 1) {
+    if(totalTask::key == 1) {
         totalTask::taskTime *= totalTask::totalTomato;
 
         query.prepare("insert into task3(taskName,taskTag,taskTime,taskTomato) values(:taskName,:taskTag,:taskTime,:taskTomato)");
@@ -32,7 +32,7 @@ historicalTask::historicalTask(QWidget *parent) :
             qDebug()<<"fault";
 
 
-        key = 0;
+        totalTask::key= 0;
     }
 
      else {
@@ -43,10 +43,11 @@ historicalTask::historicalTask(QWidget *parent) :
     model->select();
     ui->tableView->setModel(model);
 
-    query.exec("select * from task3");
+    /*query.exec("select * from task3");
     while(query.next()) {
         totalTask::totalTotalTomato += totalTask::totalTomato;
-    }
+        //totalTask::totalTotalTomato = 5000;
+    }*/
 
 
 }
@@ -66,7 +67,7 @@ main -> show();
 
 void historicalTask::on_pushButton_2_clicked()
 {
-    if(key == 1) {
+    if(totalTask::key == 1) {
         totalTask::taskTime *= totalTask::totalTomato;
         QSqlDatabase db = QSqlDatabase::database();
         QSqlQuery query;
@@ -79,7 +80,7 @@ void historicalTask::on_pushButton_2_clicked()
         if(!query.exec())
             qDebug()<<"fault";
 
-        key = 0;
+        totalTask::key = 0;
     }
     else {
         qDebug() << "you have submitt!";
@@ -94,7 +95,7 @@ void historicalTask::on_pushButton_2_clicked()
 void historicalTask::on_pushButton_4_clicked()
 {
     //升序
-    if(key == 1) {
+    if(totalTask::key == 1) {
         totalTask::taskTime *= totalTask::totalTomato;
         QSqlDatabase db = QSqlDatabase::database();
         QSqlQuery query;
@@ -106,7 +107,7 @@ void historicalTask::on_pushButton_4_clicked()
 
         if(!query.exec())
             qDebug()<<"fault";
-
+        totalTask::key = 0;
 
     }
     else {
@@ -123,7 +124,7 @@ void historicalTask::on_pushButton_4_clicked()
 void historicalTask::on_pushButton_3_clicked()
 {
     //降序
-    if(key == 1) {
+    if(totalTask::key== 1) {
         totalTask::taskTime *= totalTask::totalTomato;
         QSqlDatabase db = QSqlDatabase::database();
         QSqlQuery query;
@@ -136,7 +137,7 @@ void historicalTask::on_pushButton_3_clicked()
             qDebug()<<"fault";
 
 
-        key = 0;
+        totalTask::key = 0;
     }
 
     else {
