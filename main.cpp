@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     db.setDatabaseName("tomato.db");
     db.open();
     QSqlQuery query;
-    query.exec("create table task2(taskName QString, taskTag QString, taskTime int)");
+    query.exec("create table task3(taskName QString, taskTag QString, taskTime int, taskTomato int)");
 
     MainWindow w;
     w.show();

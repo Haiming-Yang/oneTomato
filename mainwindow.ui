@@ -450,10 +450,10 @@ color: rgb(234, 234, 234);</string>
    <widget class="QLabel" name="red_label_1">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>11</x>
       <y>330</y>
-      <width>40</width>
-      <height>40</height>
+      <width>37</width>
+      <height>37</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -466,10 +466,10 @@ color: rgb(234, 234, 234);</string>
    <widget class="QLabel" name="red_label_2">
     <property name="geometry">
      <rect>
-      <x>68</x>
+      <x>69</x>
       <y>330</y>
-      <width>40</width>
-      <height>40</height>
+      <width>37</width>
+      <height>37</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -482,10 +482,10 @@ color: rgb(234, 234, 234);</string>
    <widget class="QLabel" name="red_label_3">
     <property name="geometry">
      <rect>
-      <x>126</x>
+      <x>127</x>
       <y>330</y>
-      <width>40</width>
-      <height>40</height>
+      <width>37</width>
+      <height>37</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -498,10 +498,10 @@ color: rgb(234, 234, 234);</string>
    <widget class="QLabel" name="red_label_4">
     <property name="geometry">
      <rect>
-      <x>184</x>
+      <x>185</x>
       <y>330</y>
-      <width>40</width>
-      <height>40</height>
+      <width>37</width>
+      <height>37</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -514,10 +514,10 @@ color: rgb(234, 234, 234);</string>
    <widget class="QLabel" name="red_label_5">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>241</x>
       <y>330</y>
-      <width>40</width>
-      <height>40</height>
+      <width>37</width>
+      <height>37</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -530,10 +530,10 @@ color: rgb(234, 234, 234);</string>
    <widget class="QLabel" name="red_label_9">
     <property name="geometry">
      <rect>
-      <x>215</x>
+      <x>216</x>
       <y>380</y>
-      <width>40</width>
-      <height>40</height>
+      <width>37</width>
+      <height>37</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -546,10 +546,10 @@ color: rgb(234, 234, 234);</string>
    <widget class="QLabel" name="red_label_8">
     <property name="geometry">
      <rect>
-      <x>155</x>
+      <x>156</x>
       <y>380</y>
-      <width>40</width>
-      <height>40</height>
+      <width>37</width>
+      <height>37</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -562,10 +562,10 @@ color: rgb(234, 234, 234);</string>
    <widget class="QLabel" name="red_label_7">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>101</x>
       <y>380</y>
-      <width>40</width>
-      <height>40</height>
+      <width>37</width>
+      <height>37</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -578,10 +578,10 @@ color: rgb(234, 234, 234);</string>
    <widget class="QLabel" name="red_label_6">
     <property name="geometry">
      <rect>
-      <x>38</x>
+      <x>39</x>
       <y>380</y>
-      <width>40</width>
-      <height>40</height>
+      <width>37</width>
+      <height>37</height>
      </rect>
     </property>
     <property name="styleSheet">

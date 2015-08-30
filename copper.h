@@ -15,6 +15,9 @@ public:
     explicit copper(QWidget *parent = 0);
     ~copper();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::copper *ui;
 };

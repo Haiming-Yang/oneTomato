@@ -15,6 +15,9 @@ public:
     explicit sliver(QWidget *parent = 0);
     ~sliver();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::sliver *ui;
 };

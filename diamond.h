@@ -15,6 +15,9 @@ public:
     explicit diamond(QWidget *parent = 0);
     ~diamond();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::diamond *ui;
 };

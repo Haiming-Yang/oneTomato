@@ -15,6 +15,9 @@ public:
     explicit gold(QWidget *parent = 0);
     ~gold();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::gold *ui;
 };

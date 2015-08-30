@@ -92,15 +92,13 @@ void MainWindow::on_startwork_clicked()
     ui->pushButton->hide();
     ui->pushButton_2->hide();
     ui->pushButton_4->hide();
+    ui->info->hide();
     ui->pushButton_5->setDisabled(true);
 }
 
 void MainWindow::tick()
 {
-    if(count1 <= 0) {
-        totalTask::totalTotalTomato += 1;
-    }//番茄总数
-
+    totalTask::totalTomato = 0;
     if(count1 <= 0) {
         totalTask::totalTomato += 1;
     }
@@ -125,6 +123,7 @@ void MainWindow::tick()
 
 void MainWindow::tick_rest()
 {
+
     if(count2 <= 0) {
 
         on_stoptimer_clicked();
@@ -173,6 +172,7 @@ void MainWindow::on_startrest_clicked()
     ui->pushButton->hide();
     ui->pushButton_2->hide();
     ui->pushButton_4->hide();
+    ui->info->hide();
     ui->pushButton_5->setDisabled(true);
 }
 

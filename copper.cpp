@@ -1,5 +1,6 @@
 #include "copper.h"
 #include "ui_copper.h"
+#include "achivement.h"
 
 copper::copper(QWidget *parent) :
     QDialog(parent),
@@ -11,4 +12,11 @@ copper::copper(QWidget *parent) :
 copper::~copper()
 {
     delete ui;
+}
+
+void copper::on_pushButton_clicked()
+{
+    achivement *ach = new achivement();
+    this -> hide();
+    ach -> show();
 }

@@ -15,6 +15,9 @@ public:
     explicit king(QWidget *parent = 0);
     ~king();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::king *ui;
 };
