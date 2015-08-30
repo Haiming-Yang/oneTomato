@@ -29,7 +29,7 @@ void set::on_pushButton_clicked()
     //config->mWorkLength = ui->worksb->value() * 2;
     //config->mRestLength = ui->restsb->value() * 2;
 
-    totalTask::taskTime = config->mWorkLength;
+    totalTask::taskTime = config->mWorkLength / 60;
 
     config->save();
     MainWindow *main =new MainWindow();

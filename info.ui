@@ -147,7 +147,7 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>20</x>
      <y>400</y>
      <width>30</width>
      <height>30</height>
@@ -163,7 +163,7 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>40</x>
      <y>410</y>
      <width>31</width>
      <height>20</height>
@@ -181,7 +181,7 @@ border-image: url(:/new/prefix1/buttonImage/whihtebt.jpg);</string>
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>140</x>
      <y>410</y>
      <width>41</width>
      <height>20</height>
@@ -199,7 +199,7 @@ border-image: url(:/new/prefix1/buttonImage/whihtebt.jpg);</string>
   <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>110</x>
      <y>400</y>
      <width>30</width>
      <height>30</height>
@@ -216,7 +216,7 @@ border-image: url(:/backgroundImage/github.png);</string>
   <widget class="QPushButton" name="pushButton_6">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>230</x>
      <y>410</y>
      <width>41</width>
      <height>20</height>
@@ -234,7 +234,7 @@ border-image: url(:/new/prefix1/buttonImage/whihtebt.jpg);</string>
   <widget class="QPushButton" name="pushButton_7">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>200</x>
      <y>400</y>
      <width>30</width>
      <height>30</height>

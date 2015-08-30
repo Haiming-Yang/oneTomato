@@ -31,7 +31,7 @@ historicalTask::historicalTask(QWidget *parent) :
         if(!query.exec())
             qDebug()<<"fault";
 
-
+        totalTask::totalTomato = 0;
         totalTask::key= 0;
     }
 
@@ -79,7 +79,7 @@ void historicalTask::on_pushButton_2_clicked()
 
         if(!query.exec())
             qDebug()<<"fault";
-
+        totalTask::totalTomato = 0;
         totalTask::key = 0;
     }
     else {
@@ -108,7 +108,7 @@ void historicalTask::on_pushButton_4_clicked()
         if(!query.exec())
             qDebug()<<"fault";
         totalTask::key = 0;
-
+        totalTask::totalTomato = 0;
     }
     else {
         qDebug() << "you have submitt!";
@@ -136,7 +136,7 @@ void historicalTask::on_pushButton_3_clicked()
         if(!query.exec())
             qDebug()<<"fault";
 
-
+        totalTask::totalTomato = 0;
         totalTask::key = 0;
     }
 

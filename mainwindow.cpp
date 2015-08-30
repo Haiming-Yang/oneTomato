@@ -98,7 +98,7 @@ void MainWindow::on_startwork_clicked()
 
 void MainWindow::tick()
 {
-    totalTask::totalTomato = 0;
+
     if(count1 <= 0) {
         totalTask::totalTomato += 1;
     }

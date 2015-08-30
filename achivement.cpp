@@ -22,7 +22,7 @@ achivement::achivement(QWidget *parent) :
     QSqlQuery query;
     query.exec("select * from task3");
     while(query.next()) {
-        totalTask::totalTotalTomato += totalTask::totalTomato;
+        totalTask::totalTotalTomato += query.value(3).toInt();
         //totalTask::totalTotalTomato = 5000;
     }
 
