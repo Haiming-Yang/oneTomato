@@ -17,15 +17,16 @@ achivement::achivement(QWidget *parent) :
     ui(new Ui::achivement)
 {
     ui->setupUi(this);
-
-    QSqlDatabase db = QSqlDatabase::database();
-    QSqlQuery query;
-    query.exec("select * from task3");
-    while(query.next()) {
-        totalTask::totalTotalTomato += query.value(3).toInt();
-        //totalTask::totalTotalTomato = 5000;
+    if(totalTask::key_2 == 1) {
+        QSqlDatabase db = QSqlDatabase::database();
+        QSqlQuery query;
+        query.exec("select * from task3");
+        while(query.next()) {
+            totalTask::totalTotalTomato += query.value(3).toInt();
+            //totalTask::totalTotalTomato = 5000;
+        }
+        totalTask::key_2 = 0;
     }
-
     honourshow();
 
 }

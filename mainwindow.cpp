@@ -66,6 +66,7 @@ void MainWindow::on_pushButton_4_clicked()
   achivement* achivementmain = new achivement();
   this -> hide();
   achivementmain ->show();
+
 }
 
 void MainWindow::on_pushButton_5_clicked()
