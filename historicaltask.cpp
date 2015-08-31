@@ -23,11 +23,11 @@ historicalTask::historicalTask(QWidget *parent) :
     if(totalTask::key == 1) {
         totalTask::taskTime *= totalTask::totalTomato;
 
-        query.prepare("insert into task3(taskName,taskTag,taskTime,taskTomato) values(:taskName,:taskTag,:taskTime,:taskTomato)");
-        query.bindValue(":taskName",totalTask::str_taskName);
-        query.bindValue(":taskTag",totalTask::str_taskTag);
-        query.bindValue(":taskTime",totalTask::taskTime);
-        query.bindValue(":taskTomato",totalTask::totalTomato);
+        query.prepare("insert into task3(Name,Tag,taskTime,Tomato) values(:Name,:Tag,:Time,:Tomato)");
+        query.bindValue(":Name",totalTask::str_taskName);
+        query.bindValue(":Tag",totalTask::str_taskTag);
+        query.bindValue(":Time",totalTask::taskTime);
+        query.bindValue(":Tomato",totalTask::totalTomato);
         if(!query.exec())
             qDebug()<<"fault";
 
@@ -71,11 +71,11 @@ void historicalTask::on_pushButton_2_clicked()
         totalTask::taskTime *= totalTask::totalTomato;
         QSqlDatabase db = QSqlDatabase::database();
         QSqlQuery query;
-        query.prepare("insert into task3(taskName,taskTag,taskTime,taskTomato) values(:taskName,:taskTag,:taskTime,:taskTomato)");
-        query.bindValue(":taskName",totalTask::str_taskName);
-        query.bindValue(":taskTag",totalTask::str_taskTag);
-        query.bindValue(":taskTime",totalTask::taskTime);
-        query.bindValue(":taskTomato",totalTask::totalTomato);
+        query.prepare("insert into task3(Name,Tag,Time,Tomato) values(:Name,:Tag,:Time,:Tomato)");
+        query.bindValue(":Name",totalTask::str_taskName);
+        query.bindValue(":Tag",totalTask::str_taskTag);
+        query.bindValue(":Time",totalTask::taskTime);
+        query.bindValue(":Tomato",totalTask::totalTomato);
 
         if(!query.exec())
             qDebug()<<"fault";
@@ -83,7 +83,7 @@ void historicalTask::on_pushButton_2_clicked()
         totalTask::key = 0;
     }
     else {
-        qDebug() << "you have submitt!";
+        qDebug() << "you have submit!";
     }
     ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     model->setTable("task3");
@@ -99,11 +99,11 @@ void historicalTask::on_pushButton_4_clicked()
         totalTask::taskTime *= totalTask::totalTomato;
         QSqlDatabase db = QSqlDatabase::database();
         QSqlQuery query;
-        query.prepare("insert into task3(taskName,taskTag,taskTime,taskTomato) values(:taskName,:taskTag,:taskTime,:taskTomato)");
-        query.bindValue(":taskName",totalTask::str_taskName);
-        query.bindValue(":taskTag",totalTask::str_taskTag);
-        query.bindValue(":taskTime",totalTask::taskTime);
-        query.bindValue(":taskTomato",totalTask::totalTomato);
+        query.prepare("insert into task3(Name,Tag,Time,Tomato) values(:Name,:Tag,:Time,:Tomato)");
+        query.bindValue(":Name",totalTask::str_taskName);
+        query.bindValue(":Tag",totalTask::str_taskTag);
+        query.bindValue(":Time",totalTask::taskTime);
+        query.bindValue(":Tomato",totalTask::totalTomato);
 
         if(!query.exec())
             qDebug()<<"fault";
@@ -111,7 +111,7 @@ void historicalTask::on_pushButton_4_clicked()
         totalTask::totalTomato = 0;
     }
     else {
-        qDebug() << "you have submitt!";
+        qDebug() << "you have submit!";
     }
         ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
         model->setTable("task3");
@@ -128,11 +128,11 @@ void historicalTask::on_pushButton_3_clicked()
         totalTask::taskTime *= totalTask::totalTomato;
         QSqlDatabase db = QSqlDatabase::database();
         QSqlQuery query;
-        query.prepare("insert into task3(taskName,taskTag,taskTime,taskTomato) values(:taskName,:taskTag,:taskTime,:taskTomato)");
-        query.bindValue(":taskName",totalTask::str_taskName);
-        query.bindValue(":taskTag",totalTask::str_taskTag);
-        query.bindValue(":taskTime",totalTask::taskTime);
-        query.bindValue(":taskTomato",totalTask::totalTomato);
+        query.prepare("insert into task3(Name,Tag,Time,Tomato) values(:Name,:Tag,:Time,:Tomato)");
+        query.bindValue(":Name",totalTask::str_taskName);
+        query.bindValue(":Tag",totalTask::str_taskTag);
+        query.bindValue(":Time",totalTask::taskTime);
+        query.bindValue(":Tomato",totalTask::totalTomato);
         if(!query.exec())
             qDebug()<<"fault";
 
@@ -141,7 +141,7 @@ void historicalTask::on_pushButton_3_clicked()
     }
 
     else {
-        qDebug() << "you have submitt!";
+        qDebug() << "you have submit!";
     }
     ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     model->setTable("task3");

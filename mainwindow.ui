@@ -380,6 +380,7 @@
     </property>
     <property name="font">
      <font>
+      <family>Microsoft YaHei</family>
       <pointsize>48</pointsize>
      </font>
     </property>
@@ -403,6 +404,11 @@ color: rgb(187, 187, 187);</string>
       <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">border-image: url(:/new/prefix1/buttonImage/stoptimer.jpg);
 color: rgb(210, 210, 210);
@@ -421,6 +427,11 @@ color: rgb(210, 210, 210);
       <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">border-image: url(:/new/prefix1/buttonImage/startrest.jpg);
 color: rgb(221, 221, 221);
@@ -438,6 +449,11 @@ color: rgb(221, 221, 221);
       <width>70</width>
       <height>30</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">border-image: url(:/new/prefix1/buttonImage/startwork.jpg);

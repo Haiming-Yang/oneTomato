@@ -65,7 +65,7 @@
    </property>
    <property name="font">
     <font>
-     <family>Hiragino Sans GB</family>
+     <family>Microsoft YaHei</family>
      <pointsize>30</pointsize>
      <weight>50</weight>
      <italic>false</italic>
@@ -73,14 +73,14 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 30pt &quot;Hiragino Sans GB&quot;;
+    <string notr="true">font: 30pt &quot;Microsoft YaHei&quot;;
 background-color: rgb(255, 54, 54);</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -168,6 +168,7 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
    </property>
    <property name="font">
     <font>
+     <family>Microsoft YaHei</family>
      <pointsize>15</pointsize>
     </font>
    </property>
@@ -214,6 +215,7 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
    </property>
    <property name="font">
     <font>
+     <family>Microsoft YaHei</family>
      <pointsize>15</pointsize>
     </font>
    </property>
@@ -244,6 +246,7 @@ font: 13pt &quot;Microsoft YaHei&quot;;</string>
    </property>
    <property name="font">
     <font>
+     <family>Microsoft YaHei</family>
      <pointsize>15</pointsize>
     </font>
    </property>
