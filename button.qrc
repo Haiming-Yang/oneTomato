@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/new/prefix1">
-        <file>buttonImage/tongji.png</file>
         <file>buttonImage/shezhi.png</file>
         <file>buttonImage/honour.png</file>
         <file>buttonImage/btred.png</file>
@@ -10,6 +9,7 @@
         <file>buttonImage/startrest.jpg</file>
         <file>buttonImage/startwork.jpg</file>
         <file>buttonImage/stoptimer.jpg</file>
+        <file>buttonImage/tongji.jpg</file>
     </qresource>
     <qresource prefix="/">
         <file>buttonImage/cleanall.jpg</file>
