@@ -14,5 +14,8 @@
     <qresource prefix="/">
         <file>buttonImage/cleanall.jpg</file>
         <file>buttonImage/info.jpg</file>
+        <file>buttonImage/time.jpg</file>
+        <file>buttonImage/timecostdown.jpg</file>
+        <file>buttonImage/timecostup.jpg</file>
     </qresource>
 </RCC>

@@ -104,7 +104,7 @@ background-color: rgb(255, 54, 54);</string>
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>17</x>
      <y>70</y>
      <width>256</width>
      <height>321</height>
@@ -114,40 +114,49 @@ background-color: rgb(255, 54, 54);</string>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>420</y>
+     <x>20</x>
+     <y>410</y>
      <width>75</width>
-     <height>25</height>
+     <height>30</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/buttonImage/time.jpg);</string>
+   </property>
    <property name="text">
-    <string>创立时间</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>420</y>
+     <x>200</x>
+     <y>410</y>
      <width>75</width>
-     <height>23</height>
+     <height>30</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/buttonImage/timecostdown.jpg);</string>
+   </property>
    <property name="text">
-    <string>用时降序</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
      <x>110</x>
-     <y>420</y>
+     <y>410</y>
      <width>75</width>
-     <height>23</height>
+     <height>30</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/buttonImage/timecostup.jpg);</string>
+   </property>
    <property name="text">
-    <string>用时升序</string>
+    <string/>
    </property>
   </widget>
  </widget>

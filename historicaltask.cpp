@@ -23,7 +23,7 @@ historicalTask::historicalTask(QWidget *parent) :
     if(totalTask::key == 1) {
         totalTask::taskTime *= totalTask::totalTomato;
 
-        query.prepare("insert into task3(Name,Tag,taskTime,Tomato) values(:Name,:Tag,:Time,:Tomato)");
+        query.prepare("insert into task3(Name,Tag,Time,Tomato) values(:Name,:Tag,:Time,:Tomato)");
         query.bindValue(":Name",totalTask::str_taskName);
         query.bindValue(":Tag",totalTask::str_taskTag);
         query.bindValue(":Time",totalTask::taskTime);
@@ -36,7 +36,7 @@ historicalTask::historicalTask(QWidget *parent) :
     }
 
      else {
-        qDebug() << "you have submitt!";
+        qDebug() << "you have submit!";
     }
     ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     model->setTable("task3");
